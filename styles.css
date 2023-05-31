@@ -1,0 +1,823 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1440px
+}
+.head {
+    width: 1440px;
+    height: 101px;
+    background-color: #D9D9D9;
+    margin-bottom: 41px;
+}
+.main-block {
+    display: flex;
+    margin-right: 86px;
+}
+.left-block {
+    min-width: 203px;
+    min-height: 1400px;
+    margin-left: 0;
+    background-color: #D9D9D9;
+
+}
+.contentContainer {
+    margin-left: 86px;
+}
+.blocksContainer {
+    display: flex;
+} 
+.container-left{
+    margin-left: -40px;
+}
+.first, 
+.second, 
+.third, 
+.forth, 
+.fifth, 
+.sixth, 
+.seventh, 
+.eighth {
+    width: 487px;
+    height: 61px;
+    background-color: #D9D9D9;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+.first{
+    margin-top: -11px;
+}
+.right-blocks {
+    width: 487px;
+    height: 61px;
+    list-style-type: none;
+    margin-left: 7px;
+}
+.fifth {
+    margin-top: -11px;
+}
+.middle-block {
+    width: 1022px;
+    height: 168px;
+    background-color: #D9D9D9;
+    margin-top: 10px;
+}
+.middle-line {
+    height: 3px;
+    background-color: #D9D9D9;
+    border: #D9D9D9;
+    margin-top: 40px;
+}
+.comments-head {
+    display:flex;
+}
+.numberOfComments {
+    margin-right: 55px;
+}
+.cont {
+    display: flex;
+}
+.comments {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-right: 11px;
+}
+.number {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.4;
+}
+.commentsLine {
+    width: 190px;
+    height: 3px;
+    background-color: #000000;
+    margin-top: -15px;
+}
+.commentsRating {
+    outline: none;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 50px;
+}
+.rating {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #000000;
+    opacity: 0.4;
+    margin-top: 25px;
+}
+.arrow {
+    opacity: 0.4;
+    font-size: 20px;
+    margin-top: -35px;
+    margin-left: 177px;
+    position: absolute;
+}
+.rate {
+    text-align: left;
+    margin-top: 23px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.rateee ul {
+    list-style: none;
+    margin-top: 10px;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+.rate li {
+    margin-top: 10px;
+}
+.numberOfReplies {
+    padding-bottom: 20px;
+}
+.rate a {
+    text-decoration: none;
+    color: #000000;
+    opacity: 0.4;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.4;
+    margin-top: 20px;
+}
+.rate li:hover {
+    text-decoration:underline;
+}
+.rateee button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    height: 108px;
+    transform: translateY(0px);
+    z-index: 1;
+}
+.rateee button:focus + input {
+    z-index: -1;
+}
+.favComments {
+    outline: none;
+    background-color: white;
+    border: none;
+    cursor: pointer;  
+    display: flex;
+}
+.favorites {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #000000;
+    opacity: 0.4;
+    margin-top: 25px;
+}
+.heart {
+    margin-top: 23px;
+    margin-left: 5px;
+}
+.ur-comment {
+    margin-top: -155px;
+    z-index: -1;
+}
+.comInfo {
+    display: flex;
+}
+.tooLong {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #FF0000;
+    margin-left: 30px;
+    opacity: 0;
+}
+.myComment, .profilePic, .profilePic2 {
+    border-radius: 50%;
+}
+.mainName, .commentName, .commentName2, .commentName3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #122AC0;
+    padding-left: 30px;
+}
+.symbolsNumber {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.4;
+    padding-left: 400px;
+}
+.inputCont {
+    display: flex;
+}
+.input textarea {
+    margin-left: 90px;
+    width: 658px;
+    height: 63px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.311);
+    border-radius: 5px;
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.1);
+    resize: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+textarea::-webkit-scrollbar {
+    border-width: 0px
+}
+.send, #send {
+    width: 213px;
+    height: 61px;
+    background: #A2A2A2;
+    border-radius: 5px;
+    border-color: #A2A2A2;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0.4;
+    color: #000000;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.commentsText {
+    padding-left: 90px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: -10px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.comInfo {
+    margin-top: 40px;
+}
+.time, .Ctime {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.4;
+    padding-left: 15px;
+    margin-top: 19px;
+}
+.commenttext {
+    padding-left: 90px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: -10px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.buttonContainer{
+    display: flex;
+    margin-top: 10px;
+}
+.reply {
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    cursor: pointer;
+    opacity: 0.4;
+    margin-left: 82px;
+    display: flex;
+}
+.favCommentss {
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    cursor: pointer;
+    opacity: 0.4;
+    margin-left: 82px;
+    display: flex;
+}
+.reply img {
+    position: absolute;
+    
+}
+
+.button-text, .button-textt {
+    margin-left: 32px;
+    margin-top: 2px;
+}
+.button-textt {
+    margin-left: 12px;
+}
+.likeRound {
+    display: flex;
+    margin-top: -17px;
+}
+.dislike, .like, #minusBtn, #plusBtn {
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.dislike {
+    margin-left: 32px;
+    margin-right: 10px;
+}
+.like {
+    margin-left: 10px;
+}
+.likes {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #8AC540;
+    margin-top: 20px;
+}
+.secondComment{
+    position: relative;
+}
+.comInfo2 {
+    margin-top: 50px;
+    margin-left: 90px;
+    display: flex;
+}
+.rep {
+    opacity: 0.4;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.replyName {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.4;
+    padding-right: 15px;
+}
+.commentText, .replyText {
+    padding-left: 180px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: -10px;
+    color: #000000;
+    margin-bottom: 15px;
+
+}
+.pp {
+    border-radius: 50%;
+}
+.time2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.4;
+    margin-top: 20px;
+}
+.like2, #likeBtn {
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    cursor: pointer;
+    opacity: 0.4;
+    margin-left: 162px;
+    display: flex;
+}
+.buttontext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-left: 12px;
+    margin-top: 2px;
+}
+.replyDiv {
+    margin-top: 20px;
+    margin-left: 90px;
+    display: flex;
+    margin-bottom: 100px;
+}
+.replyImg {
+    margin-left: 5px;
+   
+    border-radius: 50%;
+}
+.commentName3 {
+    margin-left: 50px;
+    white-space: nowrap;
+}
+#textarea {
+    position: absolute;
+    width: 450px;
+    height: 63px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.311);
+    border-radius: 5px;
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.1);
+    resize: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: hsl(0, 0%, 0%);
+    margin-top: 50px;
+    margin-left: -365px;
+}
+
+#send {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 120px;
+    width: 130px;
+}
+#replyDiv {
+    max-width: 916px;
+}
+.replyInputDiv {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    max-width: 916px;
+}
+.paragraph {
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 40px;
+    margin-left: -367px;
+
+}
+#replyName {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.4;
+    padding-right: 15px;
+    margin-left: 15px;
+}
+#pp {
+    margin-left: 20px;
+    opacity: 0.4;
+   
+}
+#likeBtn {
+    position: relative;
+    margin-left: -10px;
+    margin-top: 15px;
+}
+#rate {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: -155px;
+}
+#plusBtn {
+    margin-left: 45px;
+}
+#likes {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #8AC540;
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+#rating {
+    margin-left: 180px;
+    margin-top: -45px;
+}
+/* Адаптивная верстка */
+
+@media (max-width: 320px) {
+    .wrapper {
+        min-height: 100%;
+        overflow-x: hidden;
+        max-width: 100%;
+        
+    }
+    .head {
+        width:100vw;
+    }
+    .left-block {
+        display: none;
+    }
+    .main-block {
+        margin-left: -76px ;
+    }
+    .third, .forth, .right-blocks {
+        display: none;
+    }
+    .first, .second {
+        max-width: 300px;
+        height: 61px;
+    }
+    .middle-block {
+        max-width: 300px;
+    }
+    .middle-line {
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    .commentsRating {
+        position: absolute;
+        margin-top: 40px;
+        margin-left: -5px;
+        background-color: inherit;
+    }
+    .rating {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        white-space: nowrap;
+        margin-left: -340px;
+        margin-top: 25px;
+    }
+    .arrow {
+        margin-left: -90px;
+    }
+    .rate {
+        position: absolute;
+        margin-left: -250px;
+        margin-top: 350px;
+        padding-bottom: 20px;
+    }
+    .numberOfReplies {
+        padding-right: 10px;
+    }
+    .favComments {
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 190px;
+        background-color: inherit;
+    }
+    .favorites {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .ur-comment {
+        margin-top: 20px;
+    }
+    .mainName {
+        white-space: nowrap;
+    }
+    .symbolsNumber {
+        position: absolute;
+        font-size: 10px;
+        margin-left: -205px;
+        white-space: nowrap;
+        margin-top: 48px;
+    }
+    
+    .input textarea, #textarea {
+        margin-left: 0px;
+        max-height: 30px;
+        max-width: 240px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .send {
+        margin-top: 100px;
+        margin-left: -300px;
+        width: 300px;
+    }
+    .firstComment {
+        max-width: 300px;
+        margin-top: 80px;
+    }
+    .time {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .commenttext {
+        margin-left: -90px;
+        margin-top: 15px;
+        max-width: 300px;
+    }
+    .reply {
+        margin-left: -8px;
+    }
+    .likee {
+        margin-left: 10px;
+    }
+    .button-text {
+        font-size: 16px;
+    }
+    .button-textt {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    .likeRound {
+        display: block;
+    }
+    .dislike {
+        margin-left: 4px;
+        margin-bottom: 50px;
+    }
+    .likes {
+        position: absolute;
+        margin-top: 30px;
+        margin-left: -43px;
+    }
+    .like {
+        position: absolute;
+        margin-left: -26px;
+        margin-top: 30px;
+    }
+    .secondComment {
+        max-width: 300px;
+        margin-left: -90px;
+        margin-top: 80px;
+    }
+    .rep {
+        margin-top: 30px;
+        margin-left: -125px;
+    }
+    .buttontext{
+        white-space: nowrap;
+        font-size: 16px;
+    }
+    .replyName {
+        margin-top: 50px;
+        font-size: 16px;
+    }
+    .time2 {
+        white-space: nowrap;
+        margin-left: -25px;
+        font-size: 12px;
+    }
+    .pp, .myComment, .profilePic, .replyImg {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .commentText {
+        min-width: 300px;
+        margin-left: -90px;
+    }
+   .button-text {
+        white-space: nowrap;
+   }
+   .commentName, .mainName, .commentName3, .commentName2 {
+    white-space: nowrap;
+    font-size: 16px;
+   }
+   .Ctime{
+    font-size: 12px;
+    white-space: nowrap;
+   }
+   #textarea {
+    margin-left: -245px;
+    margin-top: 80px;
+    max-width: 290px;
+   }
+   #send {
+   margin-left: -245px;
+   margin-top: 125px;
+   max-height: 40px;
+   width: 295px;
+   }
+   #replyName {
+    position: absolute;
+    font-size: 16px;
+    margin-top: 45px;
+    margin-left: 120px;
+   }
+  .replyDivv {
+    margin-left: 150px;
+    margin-bottom: 50px;
+  }
+  #rating {
+    display: flex;
+    flex-direction: column;
+    margin-top: -55px;
+    margin-left: 190px;
+  }
+  #minusBtn {
+    margin-left: 53px;
+    margin-bottom: 35px;
+  }
+  #plusBtn {
+    margin-left: 5px;
+    margin-top: 50px;
+ }
+
+  #likes {
+    margin-left: 15px;
+    margin-top: 27px;
+  }
+  .paragraph {
+    margin-left: -218px;
+    margin-top: 65px;
+    max-width: 300px;
+  }
+
+  .replyDiv {
+    margin-bottom: 50px;
+    margin-left: -10px;
+  }
+  .replyInputDiv {
+    max-width: 300px;
+    margin-bottom: 150px;
+  }
+  .commentText {
+    max-width: 300px;
+    padding-top: 25px
+  }
+  .favCommentss {
+    margin-left: -10px;
+  }
+  .secCom {
+    margin-left: -90px;
+  }
+  #BtnContainer2 {
+    margin-left: 120px;
+}
+  #heartImg {
+    margin-top: -1px;
+  }
+}
